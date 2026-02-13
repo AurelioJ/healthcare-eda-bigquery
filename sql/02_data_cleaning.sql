@@ -8,7 +8,7 @@
 -- Bucket age Groups
 
 SELECT
-  INITCAP(Name) AS Name,
+  TRIM(INITCAP(Name)) AS Name,
   TRIM(UPPER(Gender)) AS cleaned_gender,
   REPLACE(Doctor, 'Dr.', '') AS Doctor, 
   CASE 
